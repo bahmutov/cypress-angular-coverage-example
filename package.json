@@ -10,11 +10,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "nyc": {
-    "extends": "@istanbuljs/nyc-config-typescript",
-    "all": true
+    "e2e": "ng e2e",
+    "dev": "start-test 4200 cy:open"
   },
   "private": true,
   "dependencies": {
@@ -36,16 +33,14 @@
     "@angular/compiler-cli": "~8.1.1",
     "@angular/language-service": "~8.1.1",
     "@briebug/cypress-schematic": "^2.0.0",
-    "@cypress/code-coverage": "~1.10.1",
+    "@cypress/code-coverage": "3.2.2",
     "@cypress/webpack-preprocessor": "4.1.0",
-    "@istanbuljs/nyc-config-typescript": "^0.1.3",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "cypress": "~3.6.0",
+    "cypress": "~4.4.0",
     "istanbul-instrumenter-loader": "^3.0.1",
-    "istanbul-lib-coverage": "^2.0.5",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -54,8 +49,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "ngx-build-plus": "^8.1.3",
-    "nyc": "^14.1.1",
-    "source-map-support": "^0.5.13",
+    "start-server-and-test": "1.11.0",
     "ts-loader": "6.0.4",
     "ts-node": "^7.0.1",
     "tslint": "~5.15.0",
